@@ -1,0 +1,203 @@
+:root {
+	--rojo: #001aff;
+	--fondo: #292929;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 30px 0;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logotipo {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--rojo);
+	font-size: 40px;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+div a{
+    display: inline-block;
+    padding: 7px 0;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+}
+div a:hover{
+	color: #000;
+}
+
+/* ---- ----- ----- Portada ----- ----- ----- */
+.portada-principal {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(29, 29, 29, 0.5) 0%, rgba(29, 29, 29,.50) 100%), url(../img/estrellas.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: center;
+}
+
+.portada-principal .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.portada-principal .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.portada-principal .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.portada-principal .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.portada-principal .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.portada-principal .boton i {
+	margin-right: 1.25em;
+}
+
+/* ---- ----- ----- Contenedor Titulo y controles ----- ----- ----- */
+
+.contenedor-titulo-controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+.contenedor-titulo-controles{
+	color: #FFF;
+	font-size: 30px;
+}
+
+.contenedor-titulo-controles .indicadores button{
+	background: #001aff;
+	height: 4px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+
+
+/* ---- ----- ----- Contenedor Principal y flechas ----- ----- ----- */
+.hobbies-generales{
+	margin-bottom: 70px;
+}
+
+.hobbies-generales .contenedor-principal{ 
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.hobbies-generales .contenedor-principal .flecha-izquierda,
+.hobbies-generales .contenedor-principal .flecha-derecha{
+	position: absolute;
+	border: none;
+	background: rgba(29, 29, 29, 0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #FFF;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.hobbies-generales .contenedor-principal .flecha-izquierda:hover,
+.hobbies-generales .contenedor-principal .flecha-derecha:hover{
+	background: rgba(29, 29, 29, 0.9);
+}
+
+.hobbies-generales .contenedor-principal .flecha-izquierda{
+	left: 0;
+}
+.hobbies-generales .contenedor-principal .flecha-derecha{
+	right: 0;
+}
+
+/* ---- ----- ----- Carousel ----- ----- ----- */
+
+.hobbies-generales .contenedor-carousel{
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.hobbies-generales .contenedor-carousel .carousel{
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.hobbies-generales .contenedor-carousel .carousel .hobbie{
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hobbies-generales .contenedor-carousel .carousel .hobbie:hover{
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.hobbies-generales .contenedor-carousel .carousel .hobbie img{
+	width: 100%;
+	vertical-align: top;
+}

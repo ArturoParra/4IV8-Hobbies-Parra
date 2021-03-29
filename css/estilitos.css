@@ -1,0 +1,237 @@
+:root {
+	--rojo: #001aff;
+	--fondo: #292929;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+	background: var(--fondo);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 30px 0;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logotipo {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--rojo);
+	font-size: 40px;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+
+/* ---- ----- ----- Paginas ----- ----- ----- */
+
+section{
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    align-items: center;
+    color: #FFF;
+}
+
+section h2{
+    font-size: 50px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    text-align: center;
+}
+
+section h2:hover{
+    color: #AAA;
+}
+
+section p{
+    font-weight: 300;
+    margin-bottom: 15px;
+    font-size: 30px;
+    text-align: center;
+}
+
+section img{
+    height: 60%;
+}
+
+section a{
+    display: inline-block;
+    padding: 7px 0;
+    color: #FFF;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    border: 1px solid #FFF;
+    border-radius: 50px;
+    background: #001aff;
+    align-items: center;
+}
+section a:hover{
+    background: #FFF;
+    color: #001aff;
+}
+
+article{
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+    justify-content: space-evenly;
+    padding: 0;
+    align-items: center;
+    color: #FFF;
+}
+
+article h1{
+    font-size: 60px;
+    text-align: center;
+    color: #FFF;
+    padding-top: 70px;
+}
+article p{
+    text-align: center;
+    color: #FFF;
+    padding-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 30px;
+}
+
+
+/* ---- ----- ----- Clase Parallax ----- ----- ----- */
+
+.parallax{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ---- ----- ----- Fondos de secciones ----- ----- ----- */
+
+#Section1{
+    background: linear-gradient(rgba(29, 29, 29, 0.5) 0%, rgba(29, 29, 29,.50) 100%), url(../img/fondodoss.jpg);
+}
+
+#Section2{
+    background: linear-gradient(rgba(29, 29, 29, 0.5) 0%, rgba(29, 29, 29,.50) 100%), url(../img/fondoford.jpg);
+}
+
+#Section3{
+    background: linear-gradient(rgba(29, 29, 29, 0.5) 0%, rgba(29, 29, 29,.50) 100%), url(../img/fondostarwars.jpg);
+}
+
+#Section4{
+    background: linear-gradient(rgba(29, 29, 29, 0.5) 0%, rgba(29, 29, 29,.50) 100%), url(../img/fondojurassic.jpg);
+}
+
+#Section5{
+    background: linear-gradient(rgba(29, 29, 29, 0.5) 0%, rgba(29, 29, 29,.50) 100%), url(../img/fondomcfly.jpg);
+}
+
+#Section6{
+    background: linear-gradient(rgba(29, 29, 29, 0.5) 0%, rgba(29, 29, 29,.50) 100%), url(../img/fondoTOP.png);
+}
+
+#Section7{
+    background: linear-gradient(rgba(29, 29, 29, 0.5) 0%, rgba(29, 29, 29,.50) 100%), url(../img/fondotheweekend.png);
+}
+
+#Section8{
+    background: linear-gradient(rgba(29, 29, 29, 0.5) 0%, rgba(29, 29, 29,.50) 100%), url(../img/fondopowfu.jpg);
+}
+
+#Section9{
+    background: linear-gradient(rgba(29, 29, 29, 0.5) 0%, rgba(29, 29, 29,.50) 100%), url(../img/fondoimaginedragons.jpg);
+}
+
+#Section10{
+    background: linear-gradient(rgba(29, 29, 29, 0.5) 0%, rgba(29, 29, 29,.50) 100%), url(../img/fondotrevor.jpg);
+}
+
+#Section11{
+    background: linear-gradient(rgba(29, 29, 29, 0.5) 0%, rgba(29, 29, 29,.50) 100%), url(../img/fondofallout.jpg);
+}
+
+#Section12{
+    background: linear-gradient(rgba(29, 29, 29, 0.5) 0%, rgba(29, 29, 29,.50) 100%), url(../img/fondopuyi.jpg);
+}
+
+#Section13{
+    background: linear-gradient(rgba(29, 29, 29, 0.5) 0%, rgba(29, 29, 29,.50) 100%), url(../img/fondobattlefield.jpg);
+}
+
+#Section14{
+    background: linear-gradient(rgba(29, 29, 29, 0.5) 0%, rgba(29, 29, 29,.50) 100%), url(../img/fondoCOD.jpg);
+}
+
+#Section15{
+    background: linear-gradient(rgba(29, 29, 29, 0.5) 0%, rgba(29, 29, 29,.50) 100%), url(../img/fondogenshin.png);
+}
+
+#Section16{
+    background: linear-gradient(rgba(29, 29, 29, 0.5) 0%, rgba(29, 29, 29,.50) 100%), url(../img/fondosciencebitch.jpg);
+}
+
+#Section17{
+    background: linear-gradient(rgba(29, 29, 29, 0.5) 0%, rgba(29, 29, 29,.50) 100%), url(../img/fondodeku.png);
+}
+
+#Section18{
+    background: linear-gradient(rgba(29, 29, 29, 0.5) 0%, rgba(29, 29, 29,.50) 100%), url(../img/fondodrugs.jpg);
+}
+
+#Section19{
+    background: linear-gradient(rgba(29, 29, 29, 0.5) 0%, rgba(29, 29, 29,.50) 100%), url(../img/fondochicas.jpg);
+}
+
+#Section20{
+    background: linear-gradient(rgba(29, 29, 29, 0.5) 0%, rgba(29, 29, 29,.50) 100%), url(../img/fondonarutin.jpg);
+}
+
+#Section21{
+    background: linear-gradient(rgba(29, 29, 29, 0.5) 0%, rgba(29, 29, 29,.50) 100%), url(../img/fondof1.jpg);
+}
+
+#Section22{
+    background: linear-gradient(rgba(29, 29, 29, 0.5) 0%, rgba(29, 29, 29,.50) 100%), url(../img/fondoverstappen.jpg);
+}
+
+#Section23{
+    background: linear-gradient(rgba(29, 29, 29, 0.5) 0%, rgba(29, 29, 29,.50) 100%), url(../img/fondomax.jpg);
+}
+
+#Div1{
+    background: linear-gradient(rgba(29, 29, 29, 0.5) 0%, rgba(29, 29, 29,.50) 100%), url(../img/fondogalaxy\ \(1\).jpg);
+}
